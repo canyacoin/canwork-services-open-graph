@@ -1,0 +1,13 @@
+runtime: go111
+
+service: open-graph
+
+env_variables:
+  GIN_MODE: release
+  FIREBASE_SERVICE_FILE: ./firebase.json
+  GCP_PROJECT_ID: staging-can-work
+  DEFAULT_HOST: https://staging-can-work.firebaseapp.com/
+
+handlers:
+- url: /.*
+  script: auto

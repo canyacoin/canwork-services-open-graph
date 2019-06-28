@@ -1,0 +1,20 @@
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+  <title>{{.ogTitle}}</title>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{.ogURL}}" />
+  <meta name="twitter:creator" content="@{{.ogTitle}}" />
+
+  <meta property="og:title" content="{{.ogTitle}}" />
+  <meta property="og:type" content="{{.ogType}}" />
+  <meta property="og:description" content="{{.ogDescription}}" />
+  <meta property="og:url" content="{{.ogURL}}" />
+  <meta property="og:image" content="{{.ogImage}}" />
+</head>
+<script>
+  window.onload = function() {
+    window.location = "{{.redirectURL}}"
+  }
+</script>
+</html>
